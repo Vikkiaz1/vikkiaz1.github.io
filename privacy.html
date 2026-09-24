@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="How Fierydits1 accesses, uses, stores and shares account information and media, and how to revoke access or request deletion.">
+<meta name="color-scheme" content="light">
+<title>Privacy policy | Fierydits1</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap"><div class="nav">
+<a class="brand" href="index.html"><span class="mark" aria-hidden="true">Fd</span>Fierydits1</a>
+<nav aria-label="Main navigation"><a href="index.html">Home</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav>
+</div></div></header>
+<main id="main" class="wrap">
+<article class="legal"><p class="eyebrow">Your information</p><h1>Privacy policy</h1><p class="date">Last updated: September 24, 2026</p>
+<p>This policy covers the Fierydits1 personal automation application, also referred to as FieryDits, and this public information website. The project operator can be contacted at <a href="mailto:fierydits1@gmail.com">fierydits1@gmail.com</a>. The application is currently used for the operator's own accounts, rather than offering public registration.</p>
+<h2>Information the application accesses</h2>
+<ul>
+<li><strong>Google account and channel information:</strong> the account identifier used by Drive, the email address used to verify an authorization when available, the authenticated YouTube channel ID, and permissions granted during Google sign-in.</li>
+<li><strong>Drive content:</strong> configured folder and file IDs, file names, file types, access permissions, selected source images, generated videos and workflow job records.</li>
+<li><strong>Publishing information:</strong> videos, titles, descriptions, captions, platform account IDs, upload or post identifiers, status messages and errors needed to carry out and track the configured workflow.</li>
+<li><strong>Authentication information:</strong> OAuth client configuration, Google access and refresh tokens, Instagram access tokens and saved X session cookies. Google passwords are entered on Google's sign-in pages, not stored as Fierydits1 credentials.</li>
+</ul>
+<h2>Why the information is used</h2>
+<p>The application uses this information to verify the connected account, access the operator's configured media, organize Drive folders, generate videos, publish through enabled integrations, renew authorized Google access and recover interrupted jobs. Permissions depend on the features being set up: onboarding and checks do not themselves publish posts.</p>
+<p>The application does not sell Google user data, use it for advertising, or use it to train general-purpose AI models. Its use and transfer of data obtained through Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+<h2>Where information is stored</h2>
+<p>Depending on the operator's deployment, credentials and working files are stored on the operator's computer or supplied through deployment secret settings. Cloud runs may process data on GitHub Actions runners. Credentials can be readable by the processes running the application; access to those machines, private files and deployment settings must be restricted by the operator.</p>
+<p>Configured Google Drive folders store source media, generated media and recovery records. Logs can contain filenames, account or job identifiers, status information, error messages and media URLs. Local configuration and recovery data remain until the operator removes them; they are not automatically erased simply because a run finishes.</p>
+<h2>Providers and public media</h2>
+<p>Google receives authorization requests and the Drive or YouTube operations required by the workflow. Fierydits1 uses YouTube API Services; Google's handling of information is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p>When Instagram publishing is enabled, the generated video may be uploaded to the operator's Render-hosted media service so Meta can fetch it. That media URL is publicly accessible to anyone who has the link while the file is available. Temporary files may remain until workflow cleanup, manual deletion or hosting cleanup occurs. Do not use this publishing path for confidential media.</p>
+<p>Enabled Instagram and X workflows send media and accompanying text to those platforms. Published content is visible according to the platform's account and post settings. GitHub and Render may process operational data when used to run the workflow. Their own privacy policies apply to their services: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>, <a href="https://render.com/privacy">Render</a>, <a href="https://privacycenter.instagram.com/policy">Meta</a> and <a href="https://x.com/en/privacy">X</a>.</p>
+<h2>Retention, deletion and revoking access</h2>
+<p>The operator controls stored credentials, media, logs and job records. To stop access, stop scheduled or manual runs and revoke the relevant provider connection. Google access can be revoked through <a href="https://myaccount.google.com/connections">Google Account connections</a>. Instagram authorization and X sessions can be revoked through the respective account settings.</p>
+<p>Revoking access stops future authorized access but does not itself remove copies already stored by the application or posts already published. Remove the corresponding private credential files and deployment secrets, local working files and logs, Drive recovery records, and any remaining Render media. Delete public posts or videos separately using their platform's controls. Provider backups and logs follow the provider's retention practices.</p>
+<p>For questions or a deletion request concerning data held by the operator, email <a href="mailto:fierydits1@gmail.com">fierydits1@gmail.com</a>, identifying the relevant account or content without sending passwords or tokens. The operator may need to verify that the request relates to your account.</p>
+<h2>This website</h2>
+<p>This static website has no sign-in, advertising, analytics scripts, tracking pixels, third-party embeds or application cookies. When hosted on GitHub Pages, GitHub logs visitors' IP addresses for security purposes. Following an external link opens another service governed by its own policy. Emailing the operator shares the information included in your message.</p>
+<h2>Changes and contact</h2>
+<p>This page will be updated if the application's data handling changes. The date above identifies the latest revision. Privacy questions can be sent to <a href="mailto:fierydits1@gmail.com">fierydits1@gmail.com</a>.</p>
+</article></main>
+<footer><div class="wrap footer-inner"><span>Fierydits1 &middot; Personal creator automation</span><div class="footer-links"><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="mailto:fierydits1@gmail.com">Contact</a></div></div></footer>
+</body>
+</html>
